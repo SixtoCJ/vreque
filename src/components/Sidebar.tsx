@@ -8,7 +8,7 @@ import {
   faExchangeAlt, faBars, faChevronDown, faAngleDown
 } from '@fortawesome/free-solid-svg-icons';
 import '../styles/sidebar.css';
-
+import logo from '../public/logo.png'; 
 
 interface SidebarProps {
   active: boolean;
@@ -118,7 +118,7 @@ const Sidebar: React.FC<SidebarProps> = ({ active, toggleSidebar, isMobile }) =>
       <div className="sidebar-header">
         <div className="logo">
           <Link to="/">
-            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo Valle Reque" className="logo-img" />     
+            <img src="/logo.png" alt="Logo Valle Reque" className="logo-img" /> 
           </Link>
           <span>Valle <span className="text-accent">Reque</span></span>
         </div>
