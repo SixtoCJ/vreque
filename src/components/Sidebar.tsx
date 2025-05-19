@@ -118,7 +118,7 @@ const Sidebar: React.FC<SidebarProps> = ({ active, toggleSidebar, isMobile }) =>
       <div className="sidebar-header">
         <div className="logo">
           <Link to="/">
-            <img src="/logo.png" alt="Logo Valle Reque" className="logo-img" />
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo Valle Reque" className="logo-img" />     
           </Link>
           <span>Valle <span className="text-accent">Reque</span></span>
         </div>
