@@ -20,7 +20,7 @@ import './styles/globals.css';
 
 function App() {
   return (
-    <Router basename="/VReque">
+    <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Layout><Dashboard /></Layout>} />
