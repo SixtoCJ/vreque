@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vreque/static/css/main.5be24939.css",
+    "main.js": "/vreque/static/js/main.93aed083.js",
+    "static/js/453.e30fc4c6.chunk.js": "/vreque/static/js/453.e30fc4c6.chunk.js",
+    "index.html": "/vreque/index.html",
+    "main.5be24939.css.map": "/vreque/static/css/main.5be24939.css.map",
+    "main.93aed083.js.map": "/vreque/static/js/main.93aed083.js.map",
+    "453.e30fc4c6.chunk.js.map": "/vreque/static/js/453.e30fc4c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5be24939.css",
+    "static/js/main.93aed083.js"
+  ]
+}
