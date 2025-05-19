@@ -14,15 +14,13 @@ import CambiarTitular from './pages/CambiarTitular';
 import Refinanciamiento from './pages/Refinanciamiento';
 import CancelarVentas from './pages/Cancelar';
 
-
 import Login from './pages/Login';
 import Layout from './components/Layout';
 import './styles/globals.css';
 
-
 function App() {
   return (
-    <Router>
+    <Router basename="/VReque">
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Layout><Dashboard /></Layout>} />
@@ -39,15 +37,13 @@ function App() {
         <Route path="/listar" element={<Layout><RegistroVentas /></Layout>} />
       </Routes>
 
-      {/* Rutas para las acciones de ListarVentas */}     
+      {/* Rutas para las acciones de ListarVentas */}
       <Routes>
         <Route path="/listar/cambiar-titular" element={<Layout><CambiarTitular /></Layout>} />
         <Route path="/listar/finalizar" element={<Layout><div>Finalizar</div></Layout>} />
         <Route path="/listar/refinanciar" element={<Layout><Refinanciamiento /></Layout>} />
         <Route path="/listar/cancelar" element={<Layout><CancelarVentas /></Layout>} />
-
       </Routes>
-      
     </Router>
   );
 }
