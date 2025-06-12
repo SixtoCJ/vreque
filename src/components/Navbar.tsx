@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faBars, faSearch, faBell, faUser, 
@@ -12,6 +13,10 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ toggleSidebar, isMobile }) => {
+
+    const navigate = useNavigate()
+
+  
   const [userDropdownActive, setUserDropdownActive] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -83,7 +88,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleSidebar, isMobile }) => {
             <div className="dropdown-body">
               <a href="#" className="dropdown-item">
                 <FontAwesomeIcon icon={faUser} />
-                <span>Mi Perfil</span>
+                <span onClick={() => navigate("/perfil")}>Mi Perfil</span>
               </a>
               <a href="#" className="dropdown-item">
                 <FontAwesomeIcon icon={faCog} />

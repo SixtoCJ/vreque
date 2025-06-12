@@ -5,6 +5,7 @@
     --color-no-disponible: #f44336;
     --color-sin-evaluar: #ff9800;
     --color-por-evaluar: #ff9800;
+    --color-inactivo:#f44336;
     
 }
 * {
@@ -232,6 +233,10 @@ tbody tr:hover {
   background-color: rgba(244, 67, 54, 0.1);
   color: var(--color-no-disponible);
 }
+.estado-badge.inactivo {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: var(--color-inactivo);
+}
 
 .estado-badge.sin-evaluar,
 .estado-badge.por-evaluar {
@@ -433,6 +438,11 @@ tbody tr:hover {
 .estado-nombre.sin-evaluar {
   background-color: rgba(255, 152, 0, 0.1);
   color: var(--color-sin-evaluar);
+}
+
+.estado-nombre.inactivo {
+  background-color: rgba(214, 132, 118, 0.1);
+  color: var(--color-inactivo);
 }
 
 .btn-confirmar-estado {

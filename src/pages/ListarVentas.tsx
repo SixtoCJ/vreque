@@ -2,10 +2,11 @@
 
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import "../styles/registro-venta.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch, faEye, faPlus } from "@fortawesome/free-solid-svg-icons"
 import "../styles/listar-ventas.css"
+import "../styles/registro-venta.css"
+
 
 const RegistroVentas = () => {
   const navigate = useNavigate()

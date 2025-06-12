@@ -1,0 +1,33 @@
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .filters {
+        flex-wrap: wrap;
+    }
+    
+    .search-box, .filter-box {
+        flex: 1 1 40%;
+    }
+    
+    .btn-generate {
+        flex: 0 0 auto;
+    }
+    
+    .table-container {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-box, .filter-box {
+        flex: 1 1 100%;
+    }
+    
+    .action-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .btn-action, .btn-cancel {
+        flex: 1 1 40%;
+    }
+}
